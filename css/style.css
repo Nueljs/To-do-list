@@ -1,0 +1,85 @@
+:root{
+    --fuenteprincipal: "Winky Sans", sans-serif;
+}
+/* html{
+    font-size: 62.5%;
+} */
+body{
+    font-family: var(--fuenteprincipal);
+    margin: 2rem;
+    background-color: #f8f5e9 !important;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1{
+    text-align: center;
+}
+.boton-eliminar{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.boton-eliminar:hover svg {
+    stroke: darkred;
+}
+
+.hidden{
+    display: none;
+}
+
+.checked {
+    stroke: green;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    gap: 20px;
+    width: 100%;
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+textarea {
+    width: 80%; /* Hace que el textarea sea más ancho */
+    max-width: 400px; /* Limita su tamaño */
+    height: 50px;
+    padding: 10px;
+    font-size:25px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: none; /* Evita que se redimensione */
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 6px 6px 0px #000;
+}
+
+.boton-crear { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.enviar{
+    background-color: #cdcdcd;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 6px 6px 0px #000;
+    transition: background 0.3s ease;
+}
+
+.enviar:hover {
+    background-color: #8a9597;
+}
+.enviar:active {
+    transform: scale(0.95);
+}
